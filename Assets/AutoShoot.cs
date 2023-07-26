@@ -58,8 +58,11 @@ public class AutoShoot : MonoBehaviour
         Vector2 direction = (targetPosition - firePoint.position).normalized;
         arrow.GetComponent<Rigidbody2D>().velocity = direction * 10f; // Tốc độ mũi tên
 
+        // Xoay mũi tên theo hướng được bắn ra
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        arrow.transform.rotation = Quaternion.Euler(0, 0, angle+90);
+
         // Kích hoạt trạng thái bắn mũi tên trong Animator
         anim.SetBool("isShooting", true);
-        
     }
 }

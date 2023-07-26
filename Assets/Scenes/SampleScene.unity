@@ -517,8 +517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1532910634933346257, guid: 4b915f8cd0934e94cbf516544ad0248c, type: 3}
-  spawnInterval: 1
-  maxSpawnCount: 7
+  spawnInterval: 0.5
+  maxSpawnCount: 18
   targets:
   - {fileID: 1110039807}
   - {fileID: 2104955981}
@@ -847,6 +847,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2010190435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2583012368645449213, guid: d4f1c2869201f41478d4e58a524af688, type: 3}
+  m_PrefabInstance: {fileID: 2582394293057011677}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2104955980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1016,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 424466834, guid: d4f1c2869201f41478d4e58a524af688, type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 2010190435}
     - target: {fileID: 2581983621437731301, guid: d4f1c2869201f41478d4e58a524af688, type: 3}
       propertyPath: m_Name
       value: Peasant (1)
